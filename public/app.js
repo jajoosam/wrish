@@ -1,32 +1,7 @@
 // Paste in your own link from jsonstore.io
 var root = "https://www.jsonstore.io/1b89b2eed054f2c1ca3dd67350837b6b5349a5da46bb8c7de60fb07a2e65d037";
-// Taken from StackOverflow - https://stackoverflow.com/a/30810322
-function copyTextToClipboard(text) {
-  var textArea = document.createElement("textarea");
-  textArea.style.position = 'fixed';
-  textArea.style.top = 0;
-  textArea.style.left = 0;
-  textArea.style.width = '2em';
-  textArea.style.height = '2em';
-  textArea.style.padding = 0;
-  textArea.style.border = 'none';
-  textArea.style.outline = 'none';
-  textArea.style.boxShadow = 'none';
-  textArea.style.background = 'transparent';
-  textArea.value = text;
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-  try {
-    var successful = document.execCommand('copy');
-    var msg = successful ? 'successful' : 'unsuccessful';
-    console.log('Copying text command was ' + msg);
-  } catch (err) {
-    console.log('Oops, unable to copy');
-  }
 
-  document.body.removeChild(textArea);
-}
+
   function update(){
     $.ajax({
       'url': root + "/" + window.location.hash.substr(1),
@@ -72,11 +47,12 @@ function copyTextToClipboard(text) {
       quill.setContents(data)
     }
   })
+document.getElementsByTagName("button")[1]["data-cliboard-text"] = window.location.href;
   function readonly(){
     window.location.hash = "$" + window.location.hash.substr(1)
     location.reload()
   }
 
   function copy(){
-    copyTextToClipboard(window.location.href);
+    simplecopy(window.location.href);
   }
