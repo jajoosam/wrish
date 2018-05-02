@@ -7,7 +7,7 @@ As soon as you open wricked, it will generate a hash and store your content. You
 Wricked also has a read only mode, which you can activate by pressing the `👀` button while editing.
 
 
-### [Demo](https://jajoosam.tech/w) ⚡
+### [Demo](http://wrish.xyz) ⚡
 
 ![Demo GIF](https://media.giphy.com/media/DBrAW8etjyndSq1qKo/giphy.gif)
 
