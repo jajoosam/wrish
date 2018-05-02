@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <!--   Meta -->
+      <!-- HTML Meta Tags -->
+      <title>Wricked</title>
+      <meta name="description" content="Quick autosaving notepad">
+
+      <!-- Google / Search Engine Tags -->
+      <meta itemprop="name" content="Wricked">
+      <meta itemprop="description" content="Quick autosaving notepad">
+      <meta itemprop="image" content="https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2FWricked..png?1525202243885">
+
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://jajoosam.tech/w">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Wricked">
+      <meta property="og:description" content="Quick autosaving notepad">
+      <meta property="og:image" content="https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2FWricked..png?1525202243885">
+
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Wricked">
+      <meta name="twitter:description" content="Quick autosaving notepad">
+      <meta name="twitter:image" content="https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2FWricked..png?1525202243885">
+      <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/5b4a11d1-42ea-4bbc-b7f8-4619eb720a66%2Fwordbot.png?1523885693630"/>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!--   CSS -->
+      <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+      <link rel="stylesheet" href="styles.css"/>
+  </head>
+  
+  <body>
+    <div class="container">
+      
+      <div>
+        <button title="Read Only Document" style="float:left; display:block" onclick="readonly()">
+          👀
+        </button>
+        <button title="Copy Document Link" style="float:right; display:block" onclick="copy()">
+          📋
+        </button>
+      </div>
+      
+      <div style="clear:both" class="">
+        
+        <div onkeydown="fin()" id="editor" class="col-6 col-sm-12">
+          <h1>Wricked 📝</h1><br>This is an autosaving notepad. You can share this link with anyone and they would be able to edit it ✏️
+          <p><br></p>
+          <p><br></p>
+        </div>
+        
+      </div>
+ 
+    </div>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
