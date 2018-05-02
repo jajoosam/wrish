@@ -21,3 +21,5 @@ Just remix, and on `line 1` from `app.js`, paste in a link you get from [jsonsto
 - Wing - https://github.com/kbrsh/wing
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/wrish)
+
+If you liked Wrish, consider [buying me a coffee](https://www.buymeacoffee.com/jajoosam) to cover domain costs ☕
