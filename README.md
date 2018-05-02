@@ -1,0 +1,2 @@
+# wricked
+Quick Autosyncing Notepad
