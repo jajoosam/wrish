@@ -1,4 +1,4 @@
-Wricked ✏️
+Wrish ✏️
 ===================
 ## A quick autosaving notepad
 
@@ -20,4 +20,4 @@ Just remix, and on `line 1` from `app.js`, paste in a link you get from [jsonsto
 - Simplecopy - https://github.com/kyle-rb/simplecopy
 - Wing - https://github.com/kbrsh/wing
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/wricked)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/wrish)
