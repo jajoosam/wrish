@@ -2,6 +2,8 @@ Wricked ✏️
 ===================
 ## A quick autosaving notepad
 
+### [Demo](https://jajoosam.tech/w) ⚡
+
 ### Setup
 Just remix, and on `line 1` from `app.js`, paste in a link you get from [jsonstore.io](https://www.jsonstore.io)
 
