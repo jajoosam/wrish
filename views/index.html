@@ -4,7 +4,15 @@
       <!-- HTML Meta Tags -->
       <title>Wrish</title>
       <meta name="description" content="Quick autosaving notepad">
+<!--     Progressive web app tags -->
       <link rel="manifest" href="/manifest.json">
+    
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Wrish">
+      <link rel="apple-touch-icon" href="https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2Fpencil_270f%20(1)%20(1).png?1525344927546" >
+      <link rel="apple-touch-icon" sizes="192x192" href="https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2Fpencil_270f%20(1)%20(1).png?1525344927546">
+
+      <meta name="msapplication-starturl" content="/?utm_source=homescreen"/>
       <!-- Google / Search Engine Tags -->
       <meta itemprop="name" content="Wrish">
       <meta itemprop="description" content="Quick autosaving notepad">
@@ -36,14 +44,15 @@
   <body>
     <div class="container">
       <div>
-        <button title="Read Only Document" style="float:left; display:inline-block" onclick="readonly()">
+        <button id="readonly" title="Read Only Document" style="float:left; display:inline-block" onclick="readonly()">
           👀
         </button>
+
         
-        <button title="Copy Document Link" style="float:right; display:inline-block" onclick="copy()">
+        <button title="Copy Document Link" style="float:right; display:inline-block" id="copyonly" onclick="copy()">
           📋
         </button>
-        <button title="New Document" style="background-color:#f0f0f0;margin-left:35%; text-align:center; margin-top:10px; display:inline-block" onclick="window.location.href='https://wrish.xyz'">
+        <button id="newonly" title="New Document" style="background-color:#f0f0f0;margin-left:35%; text-align:center; margin-top:10px; display:inline-block" onclick="window.location.href='https://wrish.xyz'">
           ➕
         </button>
         
@@ -52,7 +61,7 @@
       <div style="clear:both" class="">
         
         <div onkeydown="fin()" id="editor" class="col-6 col-sm-12">
-          <h1>Wrish 📝</h1><br>This is an autosaving notepad. You can share this link with anyone and they would be able to edit it ✏️
+          <h1>Wrish 📝</h1><br>This is a notepad that saves your words to the internet every 3 seconds 🌐<br><br>You can share this link with anyone using the 📋 button. <br> <br>Use 👀 for a read only version.
           <p><br></p>
           <p><br></p>
         </div>

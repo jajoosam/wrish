@@ -1,5 +1,22 @@
 // Paste in your own link from jsonstore.io
 var root = "https://www.jsonstore.io/1b89b2eed054f2c1ca3dd67350837b6b5349a5da46bb8c7de60fb07a2e65d037";
+$("#readonly").hover(function(){
+  this.innerHTML = "Read only"
+}, function(){
+  this.innerHTML = "👀"
+});
+
+$("#copyonly").hover(function(){
+  this.innerHTML = "Copy link"
+}, function(){
+  this.innerHTML = "📋"
+});
+
+$("#newonly").hover(function(){
+  this.innerHTML = "<span style='color:#3d3d3d'>New Note</span>"
+}, function(){
+  this.innerHTML = "➕"
+});
 
 // Service Worker for add to homescreen
   if ('serviceWorker' in navigator) {
@@ -25,8 +42,11 @@ var root = "https://www.jsonstore.io/1b89b2eed054f2c1ca3dd67350837b6b5349a5da46b
     console.log("saving...")
   }
     var count = 0;
+    var first = true;
     function fin(){
+      if(first===true){quill.setContents({"ops":[{"attributes":{"header":1},"insert":"\n"}]}); first = false;}
       if(count === 0){
+        
         setTimeout(update, 3000)
         count = 1
       }
