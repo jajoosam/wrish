@@ -6,6 +6,7 @@ As soon as you open wrish, it will generate a hash and store your content. You c
 
 Wrish also has a read only mode, which you can activate by pressing the `👀` button while editing.
 
+Utilizing a service worker, Wrish can be added to the homescreen in android phones to make it feel native too!
 
 ### [Demo](http://wrish.xyz) ⚡
 

@@ -1,0 +1,15 @@
+{
+  "short_name": "Wrish",
+  "name": "Wrish",
+  "icons": [
+    {
+      "src":"https://cdn.glitch.com/b266dcf8-f181-4238-b29c-954a054443cb%2Fpencil_270f%20(1)%20(1).png?1525344927546",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#000000",
+  "Theme_color": "#f0f0f0",
+  "display": "standalone"
+}

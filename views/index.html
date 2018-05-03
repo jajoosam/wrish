@@ -4,7 +4,7 @@
       <!-- HTML Meta Tags -->
       <title>Wrish</title>
       <meta name="description" content="Quick autosaving notepad">
-
+      <link rel="manifest" href="/manifest.json">
       <!-- Google / Search Engine Tags -->
       <meta itemprop="name" content="Wrish">
       <meta itemprop="description" content="Quick autosaving notepad">
@@ -36,12 +36,17 @@
   <body>
     <div class="container">
       <div>
-        <button title="Read Only Document" style="float:left; display:block" onclick="readonly()">
+        <button title="Read Only Document" style="float:left; display:inline-block" onclick="readonly()">
           👀
         </button>
-        <button title="Copy Document Link" style="float:right; display:block" onclick="copy()">
+        
+        <button title="Copy Document Link" style="float:right; display:inline-block" onclick="copy()">
           📋
         </button>
+        <button title="New Document" style="margin-left:35%; text-align:center; margin-top:10px; display:inline-block" onclick="window.location.href='https://wrish.xyz'">
+          🔄
+        </button>
+        
       </div>
       
       <div style="clear:both" class="">
