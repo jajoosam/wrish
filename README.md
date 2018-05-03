@@ -10,7 +10,7 @@ Utilizing a service worker, Wrish can be added to the homescreen in android phon
 
 ### [Demo](http://wrish.xyz) ⚡
 
-![Demo GIF](https://media.giphy.com/media/DBrAW8etjyndSq1qKo/giphy.gif)
+![Demo GIF](https://i.imgur.com/Vh03t9n.gif)
 
 ### Setup
 Just remix, and on `line 1` from `app.js`, paste in a link you get from [jsonstore.io](https://www.jsonstore.io)
