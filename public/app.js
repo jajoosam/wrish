@@ -17,7 +17,7 @@ $("#newonly").hover(function(){
 }, function(){
   this.innerHTML = "➕"
 });
-
+ var placeholder = true;
 // Service Worker for add to homescreen
   if ('serviceWorker' in navigator) {
     console.log("Will the service worker register?");
@@ -44,7 +44,7 @@ $("#newonly").hover(function(){
     var count = 0;
     var first = true;
     function fin(){
-      if(first===true){quill.setContents({"ops":[{"attributes":{"header":1},"insert":"\n"}]}); first = false;}
+      if(first===true && placeholder===true){quill.setContents({"ops":[{"attributes":{"header":1},"insert":"\n"}]}); first = false;}
       if(count === 0){
         
         setTimeout(update, 3000)
@@ -58,6 +58,7 @@ $("#newonly").hover(function(){
   if(hashh.charAt(0) == "$"){
     document.getElementsByTagName("button")[0].style.display = "none";
     hashh = hashh.substr(1);
+    hashh = hashh.split("").reverse().join(""); 
     var quill = new Quill('#editor', {
       theme: 'snow',
       "modules": {
@@ -76,11 +77,13 @@ $("#newonly").hover(function(){
     
     if(data!=null){
       quill.setContents(data)
+      placeholder = false;
     }
+    
   })
 document.getElementsByTagName("button")[1]["data-cliboard-text"] = window.location.href;
   function readonly(){
-    window.location.hash = "$" + window.location.hash.substr(1)
+    window.location.hash = "$" + window.location.hash.substr(1).split("").reverse().join("")
     location.reload()
   }
 
